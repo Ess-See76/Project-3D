@@ -6,7 +6,7 @@ public class CompleteLevel : MonoBehaviour
 {
     public GameManager gameManager;
 
-    [SerializeField] GameObject music;
+    
 
     [SerializeField] GameObject player;
 
@@ -20,7 +20,6 @@ public class CompleteLevel : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            music.SetActive(false);
             gameManager.Win();
         }
     }
